@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,50 +7,132 @@
     tools:context=".SendPushNotification"
     tools:layout_editor_absoluteY="81dp">
 
-    <Button
-        android:id="@+id/buttonPushNotification"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="37dp"
-        android:onClick="pushNotification"
-        android:text="Bildirim Gönder"
-        app:layout_constraintEnd_toEndOf="@+id/pushContentUrl"
-        app:layout_constraintTop_toBottomOf="@+id/pushContentUrl" />
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/pushTitleText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="75dp"
-        android:ems="10"
-        android:hint="Bildirim Başlık Giriniz..."
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/pushContentText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="45dp"
-        android:layout_marginEnd="1dp"
-        android:ems="10"
-        android:hint="Bildirim İçerik Giriniz..."
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="@+id/pushTitleText"
-        app:layout_constraintTop_toBottomOf="@+id/pushTitleText" />
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieScrollAnimation"
+            android:layout_width="235dp"
+            android:layout_height="151dp"
+            android:layout_marginStart="69dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="69dp"
+            android:layout_marginBottom="252dp"
+            app:layout_constraintBottom_toTopOf="@+id/buttonPushNotification"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.545"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.634"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="notification.json"
+            app:lottie_loop="true" />
 
-    <EditText
-        android:id="@+id/pushContentUrl"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="41dp"
-        android:ems="10"
-        android:hint="Bildirim Url Giriniz..."
-        android:inputType="text"
-        app:layout_constraintStart_toStartOf="@+id/pushContentText"
-        app:layout_constraintTop_toBottomOf="@+id/pushContentText" />
-</android.support.constraint.ConstraintLayout>
+        <Button
+            android:id="@+id/buttonPushNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="522dp"
+            android:layout_marginBottom="20dp"
+            android:onClick="pushNotification"
+            android:text="Bildirim Gönder"
+            app:layout_constraintBottom_toTopOf="@+id/profile"
+            app:layout_constraintStart_toStartOf="@+id/pushContentUrl"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/pushTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="276dp"
+            android:ems="10"
+            android:hint="Bildirim Başlık Giriniz..."
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/pushContentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="1dp"
+            android:ems="10"
+            android:hint="Bildirim İçerik Giriniz..."
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="@+id/pushTitleText"
+            app:layout_constraintTop_toBottomOf="@+id/pushTitleText" />
+
+        <EditText
+            android:id="@+id/pushContentUrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="41dp"
+            android:ems="10"
+            android:hint="Bildirim Url Giriniz..."
+            android:inputType="text"
+            app:layout_constraintStart_toStartOf="@+id/pushContentText"
+            app:layout_constraintTop_toBottomOf="@+id/pushContentText" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="220dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="452dp"
+            android:gravity="center"
+            android:text="Bildirim Gönder"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/buttonPushNotification"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/profile"
+            android:layout_width="235dp"
+            android:layout_height="131dp"
+            android:layout_marginStart="71dp"
+            android:layout_marginEnd="71dp"
+            android:layout_marginBottom="21dp"
+            app:layout_constraintBottom_toTopOf="@+id/scrollTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonPushNotification"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="profile.json"
+            app:lottie_loop="true" />
+
+        <TextView
+            android:id="@+id/scrollTextView"
+            android:layout_width="188dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="19dp"
+            android:gravity="center"
+            android:text="Online:"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/onlineButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile" />
+
+        <Button
+            android:id="@+id/onlineButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="getScrollOnline"
+            android:text="yenile"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scrollTextView" />
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
