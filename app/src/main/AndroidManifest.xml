@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="webfirmam.app.custom3pushnotification">
+    package="webfirmam.app.iserTeknik">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -16,7 +16,7 @@
             android:name="com.onesignal.NotificationOpened.DEFAULT"
             android:value="DISABLED" />
 
-        <activity android:name=".MainActivity"
+        <activity android:name="webfirmam.app.iserTeknik.MainActivity"
             android:configChanges="orientation"
             android:screenOrientation="portrait">
 
@@ -26,16 +26,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SendPushNotification"
+        <activity android:name="webfirmam.app.iserTeknik.SendPushNotification"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
-        <activity android:name=".LoginActivity"
+        <activity android:name="webfirmam.app.iserTeknik.LoginActivity"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
-        <activity android:name=".Main2Activity"
+        <activity android:name="webfirmam.app.iserTeknik.Main2Activity"
             android:configChanges="orientation"
             android:screenOrientation="portrait"></activity>
-        <service android:name=".MyService"
+        <service android:name="webfirmam.app.iserTeknik.MyService"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
 

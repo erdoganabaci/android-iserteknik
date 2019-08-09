@@ -1,4 +1,4 @@
-package webfirmam.app.custom3pushnotification;
+package webfirmam.app.iserTeknik;
 import android.app.Service;
 import android.content.Intent;
 import android.os.Handler;
@@ -46,7 +46,7 @@ public class MyService extends Service {
                                 // Define the code block to be executed
 
                                 // Do something here on the main thread
-                                downloadData.execute(url);
+                                //downloadData.execute(url);
 
                                 //Toast.makeText(getApplicationContext(),"Calısıyor ..",Toast.LENGTH_LONG).show();
                                 // Repeat this the same runnable code block again another 2 seconds
@@ -65,7 +65,7 @@ public class MyService extends Service {
             }
         };
 
-        timer.schedule(task, 0, 60*1000);  // interval of one minute
+        timer.schedule(task, 0, 5*1000);  // interval of one minute
         return START_STICKY;
     }
 

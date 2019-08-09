@@ -1,4 +1,4 @@
-package webfirmam.app.custom3pushnotification;
+package webfirmam.app.iserTeknik;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;

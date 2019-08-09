@@ -1,7 +1,6 @@
-package webfirmam.app.custom3pushnotification;
+package webfirmam.app.iserTeknik;
 
 
-import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -21,11 +20,9 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.onesignal.OSNotification;
-import com.onesignal.OSNotificationAction;
 import com.onesignal.OSNotificationOpenResult;
 import com.onesignal.OneSignal;
 
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;

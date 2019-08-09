@@ -1,4 +1,4 @@
-package webfirmam.app.custom3pushnotification;
+package webfirmam.app.iserTeknik;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

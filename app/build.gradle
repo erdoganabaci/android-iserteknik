@@ -15,9 +15,9 @@ repositories {
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "webfirmam.app.custom3pushnotification"
+        applicationId "webfirmam.app.iserTeknik"
         manifestPlaceholders = [
-                onesignal_app_id               : '30c14b9c-f969-46e7-b3e6-918769d2aab2',
+                onesignal_app_id               : 'e766b6a6-c39c-4848-aeb8-020e4b40ce57',
                 // Project number pulled from dashboard, local value is ignored.
                 onesignal_google_project_number: 'REMOTE'
         ]

@@ -1,35 +1,42 @@
 {
   "project_info": {
-    "project_number": "974645005341",
-    "firebase_url": "https://custom3pushnotification.firebaseio.com",
-    "project_id": "custom3pushnotification",
-    "storage_bucket": "custom3pushnotification.appspot.com"
+    "project_number": "446843853138",
+    "firebase_url": "https://iser-teknik.firebaseio.com",
+    "project_id": "iser-teknik",
+    "storage_bucket": "iser-teknik.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:974645005341:android:7853deaf516f9d01",
+        "mobilesdk_app_id": "1:446843853138:android:4b155985e64fcc0d",
         "android_client_info": {
-          "package_name": "webfirmam.app.custom3pushnotification"
+          "package_name": "webfirmam.app.iserTeknik"
         }
       },
       "oauth_client": [
         {
-          "client_id": "974645005341-cqn9v6bfppanmjfn1igjm77m8rmu3ul2.apps.googleusercontent.com",
+          "client_id": "446843853138-f3b0967a9l0ns4ihjqen7gg06ccumcq4.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDNEB4NBpn0gzxJQufjOBnPnZDBXn1_S8Q"
+          "current_key": "AIzaSyBR3XQIpffQGTqg5L8mOoEM36t8RrRz0bc"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "974645005341-cqn9v6bfppanmjfn1igjm77m8rmu3ul2.apps.googleusercontent.com",
+              "client_id": "446843853138-f3b0967a9l0ns4ihjqen7gg06ccumcq4.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "446843853138-p8jbfo7k421be6g9eqga3mm2kjrilmoa.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.erdogan.iserteknikbeta"
+              }
             }
           ]
         }

@@ -1,6 +1,5 @@
-package webfirmam.app.custom3pushnotification;
+package webfirmam.app.iserTeknik;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v4.app.NavUtils;
@@ -73,11 +72,17 @@ public class SendPushNotification extends AppCompatActivity {
         pushContentText=findViewById(R.id.pushContentText);
         pushContentUrl=findViewById(R.id.pushContentUrl);
 
+        OneSignal.startInit(getApplicationContext())
+                .inFocusDisplaying(OneSignal.OSInFocusDisplayOption.Notification)
+                .unsubscribeWhenNotificationsAreDisabled(true)
+                .init();
+
         //home geri menu tuşu aktifleştirme önemli!!!!
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         Intent intent = new Intent(this,MyService.class);
-        startService(intent);
+        //startService(intent);
+        //servis başlatmak için
         //Intent intent = new Intent(this,MyService.class);
         //startService(intent);
         //idleri databaseye mainactivity de ekliyom zaten.
