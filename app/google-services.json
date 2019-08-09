@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "974645005341",
+    "firebase_url": "https://custom3pushnotification.firebaseio.com",
+    "project_id": "custom3pushnotification",
+    "storage_bucket": "custom3pushnotification.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:974645005341:android:7853deaf516f9d01",
+        "android_client_info": {
+          "package_name": "webfirmam.app.custom3pushnotification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "974645005341-cqn9v6bfppanmjfn1igjm77m8rmu3ul2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNEB4NBpn0gzxJQufjOBnPnZDBXn1_S8Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "974645005341-cqn9v6bfppanmjfn1igjm77m8rmu3ul2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
