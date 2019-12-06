@@ -9,4 +9,6 @@ And I parsed json => http://iserteknik.webfirmam.com.tr/analytic/ and show app u
 
 There are some images to understand how is work apps
 
-![Second Image](https://github.com/erdoganabaci/Ios-serTeknik/blob/master/iserTeknikBeta/iser%20online.png?raw=true)
+![First Image](https://github.com/erdoganabaci/Ios-serTeknik/blob/master/iserTeknikBeta/iser%20online.png?raw=true)
+
+![Second Image](https://github.com/erdoganabaci/android-iserteknik/blob/master/app/src/main/res/drawable/android%20iser%20gif.gif?raw=true)
